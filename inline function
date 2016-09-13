@@ -1,0 +1,21 @@
+//if execution time of a function  is less than contaxt switching of that function then we use inline fuction becuse of following  resson
+// * when compiler find any function as inline function then it subtitute fuction calling statement by body of that funtion and do not pass control to that funtion
+// it increase the efficiency of program but on same hand it increase the space requirement of program
+// we should make small size function inline
+#include<iosream.h>
+#include<conio.h>
+class krishna
+{
+  public:
+  void show()
+  {
+  
+  }
+}
+void main()
+{
+  krishna *k = new krishna;
+  k->show();
+  k->disply();
+  getch();
+}
