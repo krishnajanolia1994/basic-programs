@@ -3,8 +3,8 @@
 void main()
 {
 int *p=new int ;
-cin>>p;
-cout<<p;
+cin>>*p;
+cout<<*p;
 delete p;
 getch();
 }
