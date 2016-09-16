@@ -33,6 +33,7 @@ class derived1 : public base
 //derived class which show volume in cm squar
 calss derived2 :  public derived1
 {
+  public:
   derived2()
   {}
   void show()
