@@ -1,0 +1,47 @@
+//in below program the funtion callind is deside at run time but which argument is used is deside at run time
+//in statement 39 derived class show is called but when compaler is finds that there is no argument passed it replace ardgument by default argument of base class but derived class show is callled
+
+#include<iostream.h>
+#include<conio.h>
+class base
+{
+  public:
+    virtual void show(int x =0)
+    {
+       cout<<"this is base class";
+       cout<<endl<<x;
+    }
+}
+class derived : public base
+{
+  public:
+  void show(int x)
+    {
+      cout<<"derived class";
+      cout<<endl<<x;
+    }
+}
+void main()
+{
+  clrscr();
+  //create base class pointer
+  base *b;
+  //create base class object
+  base B;
+  //create derived class object
+  derived D;
+  //assign address of base class object into base calss pointer
+  b=&B;
+  //call base class funtion
+  b->show();
+  //assign address of derived class object into base calss pointer
+  b=&D;
+  //call derived class funtion
+  b->show();
+  getch();
+}
+output:
+this is base class
+0
+this is derived class
+0
