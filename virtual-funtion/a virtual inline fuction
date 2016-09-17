@@ -1,0 +1,1 @@
+// we should not declare a virtual fuction as inline becase we can not achived dynamic binding by virtusl function
