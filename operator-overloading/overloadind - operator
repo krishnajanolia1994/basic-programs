@@ -11,7 +11,7 @@ class krishna
   x=a;
   y=b;
   }
-  krishna operator +(krishna & k);
+  krishna operator -(krishna & k);
   void show();
 }
 krishna krishna::operator - (krishna & k)
