@@ -1,0 +1,37 @@
+#include<iostram.h>
+#include<conio.h>
+class krishna
+{
+  private :
+    int x,y;
+  public:
+    krishna(int a,int b)
+    {
+      x=a;
+      y=b;
+    }
+    friend ofstream operator <<(ofsream & k , krishna & c);
+    void show();
+}
+ofstream operator + (ofstream & k , krishna &c)
+{
+  k<<c.x;
+  k<<c.y;
+  return k;
+}
+void krishna::show()
+{
+  cout<<x<endl<<y;
+}
+void main()
+{
+  clrscr();
+  int x,y;
+  cin>>x>>y;
+  krishna k(x,y);
+  krishna t(x,y);
+  krishna j = k+t;
+  t.show();
+  cout<<t;
+  getch();
+}
