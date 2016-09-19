@@ -1,0 +1,15 @@
+//in C++, we can make operators to work for user defined classes.
+//For example, we can overload an operator ‘+’ in a class like String so that we can concatenate two strings by just using +.
+#include<iostram.h>
+#include<conio.h>
+class krishna 
+{
+  private :
+    int x,y;
+  krishna(int a,int b)
+  {
+    x=a;
+    y=b;
+  }
+}
+krishna krishna::operator + 
